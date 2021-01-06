@@ -22,4 +22,73 @@ nav{
 #link a{
     padding: 0 30px;
     text-decoration: none;
+    color: #999999;
+    transition: 0.5s;
+}
+#link a:hover{
+color: rgb(211, 160, 49);
+}
+text{
+    margin: 20px;
+}
+#product > div{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+#product .pic {
+width: 100%;
+height: 50;
+object-fit: cover;
+
+}
+#product .text{
+  padding: 10 auto 10;
+margin: 1;
+}
+#product .text h1{
+    padding: 20px 300px 20px;
+    margin: 20px;
+}
+#product .text p{
+    padding: 20px 300px 20px;
+    margin: 1px 1px 1px;
+    line-height: 2;
+}
+
+#product > div:nth-child(2){
+grid-template-areas:"text pic" ;
+grid-template-columns:60% 40%;
+} 
+#product > div:nth-child(2) .text{
+    grid-area: text;
+}
+#product > div:nth-child(2) .pic{
+    grid-area: pic;
+}
+.button {
+    padding: 8px 50px;
+    /* 邊框：粗細 樣式 顏色 */
+    border: 1px solid #226641;
+    text-decoration: none;
+    color: #226641;
+    transition: 0.5s;
+    margin: 400px  ;
+}
+
+.button:hover {
+    background: #226641;
+    color: #fff;
+}
+#map .text h1{
+    margin: 20px auto 20px;
+    text-align: center;
+
+}
+#map .text p{
+    padding: 30px auto 30px;
+}
+#map .pic{
+    width: 100%;
+height: 50;
+object-fit: cover;
 }
