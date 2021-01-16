@@ -28,6 +28,23 @@ nav{
 #link a:hover{
 color: rgb(211, 160, 49);
 }
+/* 最新商品 */
+#banner > div{
+    /* 100vh銀幕高 */
+    height: 100vh;
+
+}
+#banner div:nth-child(1){
+    background-image: url(./img/babber1.jpg);
+}
+#banner div:nth-child(2){
+    background-image: url(./img/babber2.jpg);
+}
+#banner div:nth-child(3){
+    background-image: url(./img/babber3.jpg);
+}
+
+/* 商品類型 */
 text{
     margin: 20px;
 }
@@ -39,11 +56,12 @@ text{
 width: 100%;
 height: 50;
 object-fit: cover;
+padding: 20px 200px;
 
 }
 #product .text{
-  padding: 10 auto 10;
-margin: 1;
+  padding: 10px auto 10px;
+margin: 1px;
 }
 #product .text h1{
     padding: 20px 300px 20px;
@@ -56,8 +74,8 @@ margin: 1;
 }
 
 #product > div:nth-child(2){
-grid-template-areas:"text pic" ;
-grid-template-columns:60% 40%;
+grid-template-areas:"pic text" ;
+grid-template-columns:40% 60%;
 } 
 #product > div:nth-child(2) .text{
     grid-area: text;
@@ -88,28 +106,42 @@ align-items: center;
 
 }
 #map .text p{
-    padding: 300x 300px ;
-    margin: 20px 300px;
+    padding: 300x 100px ;
+    margin: 20px 950px;
 }
-#map .pic{
-    width: 100%;
-height: 50;
-object-fit: cover;
-margin: 20px auto; 
-padding: 100px auto;
+#map img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    /* border-radius: 50%; 寬高要相同 */
+    object-fit: cover;
+    display: block;
+    /* 顯示模式：區塊 */
+    margin: 0 auto;
+    /* 區塊元素 block */
+    transition: 0.5s;
 }
-#footer{
+footer{
     background: #9919;
-    padding: 0 20px ;
-    padding-top: 100px;
+    padding: 0px 20px ;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    text-align: center;
 
     
 }
 #footer-link{
 color: #000;
 margin: 20px;
-padding: 0 20px;
+padding: 10px 20px;
 text-decoration: none;
 text-align: center;
 
+}
+#footer-link a{
+    color: #226641;
+    text-decoration: none;
+    padding: 0 20px;
+    transition: 0.5s;
 }
