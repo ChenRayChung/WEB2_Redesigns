@@ -152,6 +152,7 @@ grid-template-columns:40% 60%;
 /* 地圖 */
 #map{
 align-items: center;
+text-align: center;
 }
 #map .text h1{
     margin: 20px auto ;
@@ -159,8 +160,7 @@ align-items: center;
 
 }
 #map .text p{
-    padding: 300x 100px ;
-    margin: 20px 950px;
+color: #664622;
 }
 #map img {
     width: 500px;
@@ -173,6 +173,14 @@ align-items: center;
     margin: 0 auto;
     /* 區塊元素 block */
     transition: 0.5s;
+}
+#map hr{
+    width: 50%;
+    margin: 0 auto;
+    height: 5px;
+    background: rgba(78, 78, 78, 0.164);
+    border: none;
+
 }
 /* 菜單 */
 #menu{
