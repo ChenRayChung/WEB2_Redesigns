@@ -4,6 +4,7 @@
     font-family: 微軟正黑體;
     font-size: 20px;
 }
+/* 導覽列 */
 nav{
     display: grid;
     grid-template-columns: 30% 60% 10%;
@@ -11,6 +12,10 @@ nav{
     box-shadow:0 5px 10px rgba(0.5) ;
     padding: 20px 30px;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    opacity: 0.9;
 }
 #logo img{
     width: 200px;
@@ -29,20 +34,67 @@ nav{
 color: rgb(211, 160, 49);
 }
 /* 最新商品 */
-#banner > div{
+/* 元素一 元素二 在元素一內的元素二 */
+#banner  div{
     /* 100vh銀幕高 */
     height: 100vh;
+    margin:  auto;
+    object-fit: cover;
+    background-size: cover;
+
+    
 
 }
-#banner div:nth-child(1){
+
+.banner1{
     background-image: url(./img/babber1.jpg);
+    background-size: cover;
 }
-#banner div:nth-child(2){
+.banner2{
     background-image: url(./img/babber2.jpg);
+    background-size: cover;
 }
-#banner div:nth-child(3){
+.banner3{
     background-image: url(./img/babber3.jpg);
+    background-size: cover;
 }
+#banner{
+    text-align: center;
+    color: #fff;
+}
+#banner h1{
+    padding: 30px;
+    margin-top: 200px;
+    font-size: 100px;
+    text-shadow: 0 5px 5px  rgba(0,0,0,0,0.3);
+}
+#banner p{
+    padding: 30px;
+    text-shadow: rgba(0.5);
+    font-size: 30px;
+}
+#banner hr{
+width: 80%;
+margin: 0 auto;
+height: 5px;
+background: #fff;
+border: none;
+}
+#banner .slick-prev{
+    left: 50px;
+    z-index: 2;
+    transform: scale(1.5);
+}
+#banner .slick-next{
+    right: 50px;
+    z-index: 2;
+    transform: scale(1.5);
+}
+}
+#banner .slick-dots{
+    bottom:25;
+}
+
 
 /* 商品類型 */
 text{
@@ -97,6 +149,7 @@ grid-template-columns:40% 60%;
     background: #226641;
     color: #fff;
 }
+/* 地圖 */
 #map{
 align-items: center;
 }
@@ -110,8 +163,8 @@ align-items: center;
     margin: 20px 950px;
 }
 #map img {
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     /* border-radius: 50%; 寬高要相同 */
     object-fit: cover;
@@ -121,6 +174,36 @@ align-items: center;
     /* 區塊元素 block */
     transition: 0.5s;
 }
+/* 菜單 */
+#menu{
+    width: 1280px;
+    margin: 50px auto;
+}
+#menu div:focus{
+    outline: none;
+}
+#menu img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+#menu img:hover{
+    border-radius:5px
+}
+#menu h2{
+    text-align: center;
+    text-decoration: none;
+    color: #664622;
+    transition: 0.5s;
+    padding: 20px;
+}
+#menu h2:hover {
+    color: rgb(3, 3, 0);}
+/* 頁尾 */
 footer{
     background: #9919;
     padding: 0px 20px ;
