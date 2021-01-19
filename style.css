@@ -153,15 +153,14 @@ grid-template-columns:40% 60%;
 #map{
 align-items: center;
 text-align: center;
+color: #664622;
 }
 #map .text h1{
     margin: 20px auto ;
     text-align: center;
 
 }
-#map .text p{
-color: #664622;
-}
+
 #map img {
     width: 500px;
     height: 500px;
